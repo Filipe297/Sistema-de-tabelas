@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: #05fe8e;
+                height: 500px;
+                background-image: url();
+            }
+            h2{
+                text-align: center;
+            }
+
+            p{font-family:Tahoma;}
+            div{
+                background-color: #14eeb4;
+                height: 550px;
+            }
+
+            conteudo{
+                width: 80%;
+                height: 400px;
+                margin: 0 auto;
+                padding-left: 20px;
+                display: inline-block;
+                position: absolute;
+                left: 10%;
+                top: 10%;
+                background-color: #0ec48b;
+                border-radius: 20px;
+
+                box-shadow: 17px 9px 44px 0px rgba(0,0,0,0.44);
+                -webkit-box-shadow: 17px 9px 44px 0px rgba(0,0,0,0.44);
+                -moz-box-shadow: 17px 9px 44px 0px rgba(0,0,0,0.44);
+            }
+
+            img{
+                width:100px;
+                position:absolute;
+                bottom:0px;
+                right:45%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+
+        
+        <conteudo>
+            <h2> Muito obrigado pela sua solicitação</h2>
+            </br>
+            <p>Você solicitou '.$ncadeira.' cadeiras e '.$nmesas.' mesas</p>
+            <p></p>
+            <p>Endreço de solicitação: <b>'.$endereco.'</b>.</p>
+            </br>
+            </br>
+            <h3>Muto obrigado '.$solicitante.', espero que tenha um ótimo dia.</h3>
+            <img src="http://localhost/Códigos back-end/sistemaLAJ/paginas/pdf/imagem/teste2.jpg">
+
+            <!-- 
+                Essas são as tags que eu posso usar, imagem o Dompdf renderiza apenas jpg 
+                agora também posso puxar links externos, muito provavelmente o font awesome tbm possa 
+                ser redenrizado.
+            -->
+        
+        </conteudo>
+        </div>
+    </body>
+</html>

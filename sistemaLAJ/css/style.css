@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*:focus{
+    outline: 0;
+}
+
+body,html{
+    z-index: 0;
+    height: 100%;
+}
+
+.sumiu{opacity:0;}
+
+/* MAIN */
+
+/* header */
+
+/*  */
+
+
+/* Box de alerta de datas expiradas*/
+.dataexpirou {
+    height: 101px;
+    background: rgb(16 255 56);
+    text-align: center;
+    max-width: 137px;
+    margin: 0 auto;
+    margin-top: -300px;
+    padding: 0px 33px;
+    border-radius: 5px;
+    position: fixed;
+    top: 4%;
+    left: 63%;
+    transform: translateY(-50%);
+    width: 100%;
+    transition: 0.5s;
+    z-index: 1;
+    opacity: 1;
+    color: black;
+    font-weight: bolder;
+    box-shadow: 10px 10px 8px -1px rgba(0,0,0,0.12);
+    -webkit-box-shadow: 10px 10px 8px -1px rgba(0,0,0,0.12);
+    -moz-box-shadow: 10px 10px 8px -1px rgba(0,0,0,0.12);
+}
+
+.clexpirou{
+    width: 25px;
+    padding: 10px 40px;
+    background-color: #00d5ff;
+    cursor: pointer;
+    display: block;
+    margin: 19px auto 0 auto;
+    border-radius: 400px;
+    /* border: 1px solid black; */
+    text-align: center;
+    color: white;
+    box-shadow: 3px 3px 17px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 3px 17px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 17px 0px rgba(0,0,0,0.75);
+    }
+
+/*  */
+
+/* Sidebar */
+
+#asb{
+    width: 30px;
+    height: 30px;
+    margin-bottom: -6px;
+    margin-left: 10px;
+    display: inline-block;
+    cursor: pointer;
+    background-image: url(../imagens/menu.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    /* transition: 1.5s; */
+}
+
+.sidebar{
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.9s;
+}
+
+.sidebar .wrapitens{
+    width: 98%;
+    height: 100%;
+    max-width: 400px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0 0 0);
+    min-height: 1000px;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.sidebar .wrapitens .btn-preferencias{
+    width: 150px;
+    padding: 8px 0px;
+    background-color: rgb(255 255 255);
+    color: rgb(0 0 0);
+    position: relative;
+    left: 9;
+    top: 360;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-left: 1px solid rgb(0 0 0);
+    padding-left: 12px;
+}
+
+.escondeu{width: 0%;}
+/*  */
+
+.center{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1280px;
+    /* display: flex; */
+}
+.form-do-main{
+    display: inline-block;
+    position: relative;
+    top: 440;
+    left: 100px;
+}
+.form-do-main input[type="submit"]{
+    width: 80px;
+    height: 30px;
+    background-color: rgb(3, 3, 3);
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    font-size: 13px;
+    position: relative;
+    display: inline-block;
+}
+
+.painel-login-mains{
+    background-color: rgb(9, 184, 27);
+    padding: 10px 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.painel-login-mains .user{
+    position: relative;top: 0;left: 0;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 2%;
+    font-weight: normal;
+}
+
+
+/* Tabela */
+.tabela{
+    max-width: 1280px;
+    width: 1280px;
+    color: rgb(255, 255, 255);
+    padding-left: 0px;
+    margin: 120px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.tabela h3{
+    padding: 13px 0px;
+}
+
+.tabela table{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0px ;
+    background-color: gray;
+}
+
+table th{
+    width: 740px;
+    height: 40px;
+    background-color: rgb(75, 255, 35);
+    padding-top: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+table td{
+    width: 740px;
+    height: 20px;
+    background: rgb(255 255 255);
+    text-align: center;
+    font-size: 14px;
+}
+
+table .tablendere{
+    width: 1000px;
+    text-align: center;
+}
+
+.tabela .sla{
+    background-color: rgba(205, 222, 207, 0);
+    text-align: center;
+    border: 0px;
+}
+
+.tabela table input[type='submit']{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 0px;
+    background: rgb(205, 222, 207);
+    border: 0px solid black;
+}
+
+.tabela table input[value="Aguardando"]{background: rgb(253, 2, 2);}
+.tabela table input[value="Entregue"]{background: rgb(7, 184, 22);}
+
+
+.tabela table input[value="Remover"]{background: rgb(223, 221, 221);}
+.tabela table input[value="Editar"]{background: rgb(223, 221, 221);}
+.tabela table input[value="imprimir"]{background: rgb(223, 221, 221);}
+
+
+.tabela table input[value="Remover"]:hover{background: rgb(230, 20, 20);}
+.tabela table input[value="Editar"]:hover{background: rgb(185, 184, 184);}
+.tabela table input[value="imprimir"]:hover{background: rgb(185, 184, 184);}
+
+
+.tabela option[value="sim"]{
+    background-color: green;
+}
+
+.tabela option[value="nao"]{
+    background-color: red;
+}
+/*  */
+
+
+/* form de registro */
+.div-botao-formregistro{
+    display: inline-block;
+    width: 100px;
+    background: rgb(205, 222, 207);
+    color: black;
+    position: fixed;
+    top: 50;
+    right: 55px;
+    cursor: pointer;
+    padding: 7px 5px;
+    text-align: center;
+}
+
+form.registro {
+    height: 500px;
+    background: rgb(16 255 45 / 95%);
+    text-align: center;
+    max-width: 515px;
+    margin: 0 auto;
+    margin-top: 30;
+    padding: 0px 90px;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    transition: 0.5s;
+    z-index: 1;
+    opacity: 1;
+}
+
+.displaynone{
+    /* display: none !important;  */
+    z-index: -1 !important;
+    opacity: 0 !important;
+}
+
+form input{
+    margin-bottom: 20px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+form input[type="number"]{
+    width: 75%;
+    padding-left: 4px;
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+form input[type="text"]{
+    width: 75%;
+    padding-left: 4px;
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+form input[type="submit"]{
+    display: inline-block;
+    width: 382px;
+    height: 35px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #cbcbcb;
+}
+
+.clform{
+    width: 25px;
+    padding: 5px;
+    background-color: red;
+    cursor: pointer;
+    position: absolute;
+    right: -10;
+    top: -10;
+    border-radius: 400px;
+    border: 0px;
+}
+
+/**/
+
+/*****/
+
+/* LOGIN */
+.box-login{
+    text-align: center;
+    /* background-color: rgb(1, 187, 44); */
+    margin-top: 50px;
+    padding: 40px 0;
+}
+
+.box-login > h2{
+    margin-bottom: 10px;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.box-login form h2{
+    margin-bottom: 10px;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.box-login input[type='text'],input[type='password']{
+    width: 40%;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 0px;
+    outline: 0;
+    padding: 5px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-login input[type='submit']{
+    width: 15%;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 30px;
+    outline: 0;
+    padding: 5px;
+    cursor: pointer;
+}
+/***MAIN***/
+
+
+/* painel do administrador */
+
+a.paineluser{
+    padding: 9px;
+    background-color: azure;
+    text-decoration: none;
+    border-radius: 19px;
+    color: black;
+}
+
+main.paineluser{
+    padding: 20px 0px;
+}
+div.paineluser{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 40px 10px;
+    background-color: rgb(14 143 6);
+    text-align: center;
+}
+
+div.paineluser > h3{
+    color: #f1e1e1;
+}
+
+painel.userpainel{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+}
+
+div.userpainel{
+    width: 120px;
+    padding: 12px 0px;
+    background-color: rgb(0 189 23 / 71%);
+    /* border: 1px solid black; */
+    /* text-align: center; */
+    /* display: inline-block; */
+    margin-left: 10px;
+    border-radius: 7px;
+}
+
+form.userpainel{
+    width: 100%;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+input[type='submit'].userpainel
+{
+    width: 98px !important;
+    margin-bottom: 1px;
+    border-radius: 20px;
+    background-color: #cbcbcb;
+}
+
+/* form de adicionar usuario */
+form.adusuario{
+    border: 1px solid black;
+    text-align: center;
+    width: 306px;
+    margin: 0px auto;
+}
+
+form.adusuario > input[type="text"], input[type="submit"].adusuario{
+    width: 78% !important;
+}
+
+/****/

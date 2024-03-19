@@ -1,0 +1,16 @@
+{
+    "name": "filip/pdf",
+    "autoload": {
+        "psr-4": {
+            "Filip\\Pdf\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "filipe"
+        }
+    ],
+    "require": {
+        "dompdf/dompdf": "^2.0"
+    }
+}
